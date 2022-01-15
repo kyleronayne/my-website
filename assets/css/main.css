@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-nav {
+.navbar {
     position: sticky;
     z-index: 1;
     display: flex;
@@ -25,20 +25,20 @@ nav {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-#name {
-    font-size: 2.25rem;
+.navbar__name {
+    font-size: 2rem;
     margin: 0;
     color: #E94F37;
 }
 
-#nav-items {
+.navbar__items {
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
     color: #F6F7EB;
 }
 
-#download-resume {
+.download-resume-btn {
     padding: 0.5rem;
     border-style: solid;
     border-radius: 12px;
@@ -46,6 +46,6 @@ nav {
     border-color: #E94F37;
 }
 
-#mobile-menu-button {
-       display: none;
+.navbar__mobile-menu-btn {
+    display: none;
 }
