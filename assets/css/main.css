@@ -9,3 +9,43 @@ html {
     margin: 0;
     padding: 0;
 }
+
+body {
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #393E41;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+#name {
+    font-size: 2.25rem;
+    margin: 0;
+    color: #E94F37;
+}
+
+#nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    color: #F6F7EB;
+}
+
+#download-resume {
+    padding: 0.5rem;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: #E94F37;
+}
+
+#mobile-menu-button {
+       display: none;
+}
