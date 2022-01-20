@@ -34,16 +34,29 @@ body {
 .navbar__items {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 1.5rem;
     color: #F6F7EB;
 }
 
-.download-resume-btn {
+.resume-download {
+    display: flex;
+    align-items: center;
     padding: 0.5rem;
     border-style: solid;
     border-radius: 12px;
     border-width: 3px;
     border-color: #E94F37;
+}
+
+.resume-download__text {
+    color: #E94F37;
+}
+
+.resume-download__icon {
+    padding-left: 0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .navbar__mobile-menu-btn {
@@ -54,7 +67,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 5rem 0 5rem 5rem;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
 }
 
 .about-me__photo {
@@ -68,7 +82,7 @@ body {
     height: 10rem;
     width: 25rem;
     border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px;
+    box-shadow: 0px 2px 15px 2px #3F88C5;
 }
 
 .bio-card__title {
@@ -78,11 +92,32 @@ body {
 
 .skills {
     background-color: #FCFCFC;
-    margin-bottom: 5rem
+    padding-bottom: 5rem;
 }
 
 .skills__header {
     padding-top: 2.5rem;
     text-align: center;
     color: #E94F37
+}
+
+.skills__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #3F88C5;
+}
+
+.projects__header {
+    padding-top: 2.5rem;
+    text-align: center;
+    color: #E94F37;
 }
