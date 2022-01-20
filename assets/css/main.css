@@ -40,23 +40,22 @@ body {
 }
 
 .resume-download {
+    text-decoration: none;
+}
+
+.resume-download__wrapper {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
-    border-style: solid;
-    border-radius: 12px;
-    border-width: 3px;
-    border-color: #E94F37;
-}
-
-.resume-download__text {
     color: #E94F37;
+    padding: 0.25rem;
+    border-style: solid;
+    border-radius: 9px;
 }
 
-.resume-download__icon {
+.file-download-icon {
     padding-left: 0.25rem;
-    width: 1.25rem;
-    height: 1.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .navbar__mobile-menu-btn {
