@@ -1,108 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--CSS Styles -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- Favicons -->
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/icons/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/icons/favicon-32x32.png"
-        />
-        <!-- Animate CSS CDN -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <title>Kyle Ronayne</title>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <h1 class="navbar__name">Kyle Ronayne</h1>
-            <ul class="navbar__items">
-                <li>
-                    <a>About Me</a>
-                </li>
-                <li>
-                    <a>Skills</a>
-                </li>
-                <li>
-                    <a>Projects</a>
-                </li>
-                <li>
-                    <a>Contact</a>
-                </li>
-                <li>
-                    <a class="resume-download" href="/assets/documents/Kyle Ronayne - Resume.pdf" download="Kyle Ronayne - Resume">
-                        <div class="resume-download__wrapper">
-                            Resume
-                            <img class="file-download-icon" src="assets/images/file-download-icon.png">
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <button class="navbar__mobile-menu-btn">
-                <ion-icon class="bars" name="menu-outline"></ion-icon>
-            </button>
-        </nav>
-        <!-- About Me Section -->
-        <section class="about-me">
-            <img class="about-me__photo" src="assets/images/headshot.png">
-            <div class="about-me__bio-card">
-                <h2 class="bio-card__title">About Me</h2>
-                <p class="bio-card__paragraph">I am passionate about developing ideas into software. After graduation, I aspire to become a full-time web and mobile application developer. An environment where I will be learning new ideas and technologies related to software development is not something that I will shy away from!</p>
-            </div>
-        </section>
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2 class="skills__header">Skills</h2>
-            <div class="skills__icons">
-                <div class="icons__first-row">
-                    <img class="skill-icon" src="assets/images/python-icon.svg" alt="Python programming language icon" loading="lazy">
-                    <img class="skill-icon" src="assets/images/java-icon.svg" alt="Java programming language icon" loading="lazy">
-                    <img class="skill-icon" src="assets/images/angular-icon.svg" alt="Angular framework icon" loading="lazy">
-                </div>
-                <div class="icons__second-row">
-                    <img class="skill-icon" src="assets/images/swift-icon.svg" alt="Swift programming language icon" loading="lazy">
-                    <img class="skill-icon" src="assets/images/kotlin-icon.svg" alt="Kotlin programming language icon" loading="lazy">
-                    <img class="skill-icon" src="assets/images/react-icon.svg" alt="React framework icon" loading="lazy">
-                </div>
-            </div>
-        </section>
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2 class="projects__header">Projects</h2>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Kyle Ronayne</title>
+  </head>
 
-        <!-- Contact Section -->
-
-        <!-- Social accounts - Fixed to the right -->
-
-        <!-- Scroll to top -->
-
-        <!-- Footer section -->
-
-        <!-- Website scripts -->
-        <!-- <script src="assets/js/app.js"></script> -->
-
-        <!-- Ion icons scripts -->
-        <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
-    </body>
+  <body>
+    <nav class="nav">
+      <ul class="nav__links">
+        <li class="nav__link">About Me</li>
+        <li class="nav__link">Skills</li>
+        <li class="nav__link">Projects</li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="about-me-section">
+        <div class="title-container">
+          <h1 class="about-me-section__title">Kyle Ronayne</h1>
+          <h3 class="about-me__subtitle">web and mobile app developer</h3>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>

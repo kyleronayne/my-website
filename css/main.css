@@ -1,122 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-
+/* Variables */
 :root {
-    font-family: "Roboto", sans-serif;
+  --theme-font: "Kanit", sans-serif;
+  --theme-font-size-xlarge: 80px;
+  --theme-color-nav: #342e37;
+  --theme-color-light: #fafffd;
 }
 
-html {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 8fr 1.5fr;
+  font-family: var(--theme-font);
+  height: 100vh;
 }
 
-.navbar {
-    position: sticky;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #393E41;
-    padding: 1.5rem 3.5rem;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+/* Navbar */
+nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--theme-color-nav);
 }
 
-.navbar__name {
-    font-size: 2rem;
-    margin: 0;
-    color: #E94F37;
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
-.navbar__items {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    color: #F6F7EB;
+.nav__link {
+  padding: 0 4rem 0 4rem;
+  color: var(--theme-color-light);
 }
 
-.resume-download {
-    text-decoration: none;
+.nav__link:hover {
+  color: #48e5c2;
 }
 
-.resume-download__wrapper {
-    display: flex;
-    align-items: center;
-    color: #E94F37;
-    padding: 0.25rem;
-    border-style: solid;
-    border-radius: 9px;
+/* Main */
+main {
+  grid-area: main;
 }
 
-.file-download-icon {
-    padding-left: 0.25rem;
-    height: 1.5rem;
-    width: 1.5rem;
+/* Main - About Me Section */
+.about-me-section {
+  background-color: var(--theme-color-light);
 }
 
-.navbar__mobile-menu-btn {
-    display: none;
+.title-container {
+  margin: 4rem 0 0 8rem;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem 0 5rem 0;
+.about-me-section__title {
+  font-size: var(--theme-font-size-xlarge);
+  line-height: 1.2;
 }
 
-.about-me__photo {
-    width: 30rem;
-}
-
-.about-me__bio-card {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-    width: 25rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px #3F88C5;
-}
-
-.bio-card__title {
-    margin: 0;
-    color: #E94F37;
-}
-
-.skills {
-    background-color: #FCFCFC;
-    padding-bottom: 5rem;
-}
-
-.skills__header {
-    padding-top: 2.5rem;
-    text-align: center;
-    color: #E94F37
-}
-
-.skills__icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skill-icon {
-    width: 6.5rem;
-    height: 6.5rem;
-    padding: 1.5rem;
-    margin: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px #3F88C5;
-}
-
-.projects__header {
-    padding-top: 2.5rem;
-    text-align: center;
-    color: #E94F37;
+/* Footer */
+footer {
+  grid-area: footer;
 }
