@@ -1,0 +1,32 @@
+/* Variables */
+:root {
+  --theme-font: "Kanit", sans-serif;
+  --theme-font-size-xlarge: 80px;
+  --theme-color-dark: black;
+  --theme-color-light-1: #fdfdfd;
+  --theme-color-accent-1: #48e5c2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 8fr 1.5fr;
+  font-family: var(--theme-font);
+  height: 100vh;
+}
+
+[class*="eye-catcher-text"] {
+  text-decoration: underline 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--theme-color-accent-1);
+}
