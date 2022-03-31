@@ -60,6 +60,15 @@ main {
   box-shadow: 5px 5px var(--theme-color-accent-1);
 }
 
+.social-links-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  padding: 1rem;
+}
+
 /* Footer */
 footer {
   grid-area: footer;
