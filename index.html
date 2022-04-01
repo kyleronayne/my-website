@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- Animate CSS CDN -->
@@ -21,8 +21,8 @@
     />
     <title>Kyle Ronayne</title>
   </head>
-
   <body>
+    <!-- Nav -->
     <nav class="nav">
       <ul class="nav__links">
         <li class="nav__link">About Me</li>
@@ -30,13 +30,43 @@
         <li class="nav__link">Projects</li>
       </ul>
     </nav>
+    <!-- Main -->
     <main class="main">
+      <!-- Main - About Me Section -->
       <section class="about-me-section">
-        <div class="title-container">
-          <h1 class="about-me-section__title">Kyle Ronayne</h1>
-          <h3 class="about-me-section__subtitle eye-catcher-text">
-            web and mobile application developer
-          </h3>
+        <div class="header-container">
+          <h1 class="about-me-section__heading">Kyle Ronayne</h1>
+          <div class="subheading-container">
+            <span class="about-me-section__subheading eye-catcher-text"
+              >web and mobile application developer
+            </span>
+            <div class="social-links-container">
+              <a
+                class="subheading__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/kyle-ronayne"
+              >
+                <img
+                  class="social-link__icon"
+                  src="./assets/images/linkedin-icon.svg"
+                  alt="Blue LinkedIn logo"
+                />
+              </a>
+              <a
+                class="subheading__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kyleronayne"
+              >
+                <img
+                  class="social-link__icon"
+                  src="./assets/images/github-icon.svg"
+                  alt="Black GitHub logo"
+                />
+              </a>
+            </div>
+          </div>
         </div>
         <div class="bio-container">
           <span class="about-me-section__bio-headshot">Picture Here</span>
@@ -46,36 +76,26 @@
               <span class="eye-catcher-text"
                 >bringing business ideas to life through web and mobile
                 applications</span
-              >. I welcome environments where I learn new ideas and technologies
-              related to business and software development.
+              >. I thrive in environments where I am learning new ideas and
+              technologies related to business and software development.
             </p>
           </div>
         </div>
-        <div class="social-links-container">
-          <a class="social-link" href="https://github.com/kyleronayne">
-            <img
-              class="social-link__icon"
-              src="./assets/images/github-icon.svg"
-              alt="Black GitHub logo"
-            />
-          </a>
-          <a class="social-link" href="https://www.linkedin.com/in/kyle-ronayne">
-            <img
-              class="social-link__icon"
-              src="./assets/images/linkedin-icon.svg"
-              alt="Blue LinkedIn logo"
-            />
-          </a>
-          <a class="social-link" href="mailto:kyle.ronayne@icloud.com">
-            <img
-              class="social-link__icon"
-              src="./assets/images/email-icon.svg"
-              alt="Black envelope"
-            />
-          </a>
+        <div class="contact-button-wrapper">
+          <button class="about-me-section__contact-button">
+            CONTACT ME<span class="contact-button__hand-wave">👋🏼</span>
+          </button>
+        </div>
+      </section>
+      <!-- Main - Skills Section -->
+      <section class="skills-section">
+        <div class="skills-section-underlay"></div>
+        <div class="skills-section-overlay">
+          <h2 class="skills-section__title eye-catcher-text">Skills</h2>
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer"></footer>
   </body>
 </html>

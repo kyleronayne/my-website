@@ -29,27 +29,63 @@ main {
 
 /* Main - About Me Section */
 .about-me-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem 8rem 8rem 8rem;
   background-color: var(--theme-color-light-1);
 }
 
-.title-container {
-  margin: 4rem 0 0 8rem;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 9rem;
 }
 
-.about-me-section__title {
-  font-size: var(--theme-font-size-xlarge);
+.about-me-section__heading {
+  font-size: 80px;
+  font-weight: var(--theme-bold-font);
   line-height: 1.2;
 }
 
-.about-me-section__subtitle {
-  padding: 0;
+.about-me-section__subheading {
+  width: fit-content;
+  font-size: 22px;
+}
+
+.subheading-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links-container {
+  display: flex;
+}
+
+.social-links-container a:first-child {
+  padding-right: 1rem;
+}
+
+.social-link__icon {
+  transition: margin 0.2s ease-in-out;
+}
+
+.social-link__icon:hover {
+  margin-top: -6px;
 }
 
 .bio-container {
   display: flex;
+  align-self: center;
   justify-content: space-around;
-  align-items: flex-start;
-  margin: 8rem 0 8rem 0;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 9rem;
+}
+
+.about-me-section__bio-headshot {
+  width: 20rem;
 }
 
 .about-me-section__bio-card {
@@ -60,13 +96,56 @@ main {
   box-shadow: 5px 5px var(--theme-color-accent-1);
 }
 
-.social-links-container {
-  display: flex;
-  justify-content: center;
+.contact-button-wrapper {
+  align-self: center;
+  margin-bottom: 9rem;
 }
 
-.social-link {
-  padding: 1rem;
+.about-me-section__contact-button {
+  display: flex;
+  align-items: center;
+  transform: skewX(-15deg);
+  padding: 1.5rem 4rem 1.5em 4rem;
+  font-size: 18px;
+  font-weight: var(--theme-bold-font);
+  background-color: var(--theme-color-dark);
+  color: var(--theme-color-light-1);
+  border: none;
+  box-shadow: 6px 6px 0 var(--theme-color-accent-1);
+  cursor: pointer;
+}
+
+.contact-button__hand-wave {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+/* Main - Skills section */
+.skills-section {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.skills-section-underlay {
+  height: 6rem;
+  background-color: var(--theme-color-light-1);
+}
+
+.skills-section-overlay {
+  display: flex;
+  justify-content: center;
+  height: 35rem;
+  width: 85%;
+  margin-top: -6rem;
+  background-color: var(--theme-color-light-1);
+  border: solid black 10px;
+  border-radius: 25px;
+  box-shadow: 0px -10px 25px 10px #00000033;
+}
+
+.skills-section__title {
+  margin-top: 1rem;
 }
 
 /* Footer */
@@ -74,25 +153,8 @@ footer {
   grid-area: footer;
 }
 
-/* Modifications for screen sizes with a width <= 1200px */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1056px) {
   .bio-container {
-    flex-direction: column; /* Change from row */
-    align-items: center; /* Change from flex-start */
-  }
-}
-
-/* Modifications for screen sizes with a width <= 800px */
-@media screen and (max-width: 800px) {
-  .title-container {
-    margin: 4rem 3rem 0 3rem; /* Addition of right and left margins */
-  }
-
-  .bio-container {
-    margin: 8rem 6rem 8rem 6rem; /* Addition of right and left margins */
-  }
-
-  .about-me-section__bio-card {
-    width: 25rem; /* Reduction of width */
+    flex-direction: column;
   }
 }
