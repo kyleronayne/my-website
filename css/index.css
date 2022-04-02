@@ -166,6 +166,23 @@ footer {
   }
 }
 
+@media screen and (max-width: 736px) {
+  .subheading-container {
+    flex-direction: column; /* Change from row */
+  }
+
+  .social-links-container {
+    padding-top: 1rem; /* Change from 0rem */
+  }
+
+  .about-me-section__bio-headshot {
+    width: auto; /* Change from 20rem */
+  }
+  .about-me-section__bio-card {
+    width: auto; /* Change from 30rem */
+  }
+}
+
 /* Animations */
 @keyframes wave-hand {
   0% {
@@ -181,7 +198,8 @@ footer {
   }
 
   /* Delay period */
-  30%, 100% {
-    transform: rotate(0deg)
+  30%,
+  100% {
+    transform: rotate(0deg);
   }
 }
