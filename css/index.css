@@ -126,7 +126,7 @@ main {
   animation-name: wave-hand;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-fill-mode:  forwards;
+  animation-fill-mode: forwards;
 }
 
 /* Main - Skills section */
@@ -143,7 +143,8 @@ main {
 
 .skills-section-overlay {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 35rem;
   width: 85%;
   margin-top: -6rem;
@@ -154,6 +155,26 @@ main {
 }
 
 .skills-section__title {
+  margin-top: 1rem;
+}
+
+.skill-cards-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-cards-container__row {
+  display: flex;
+}
+
+.skills-section__skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill-card__label {
   margin-top: 1rem;
 }
 
