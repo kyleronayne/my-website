@@ -67,12 +67,8 @@ main {
   padding-right: 1rem;
 }
 
-.social-link__icon {
-  transition: margin 0.2s ease-in-out;
-}
-
 .social-link__icon:hover {
-  margin-top: -6px;
+  animation: social-link-icon-float 0.2s ease-in forwards;
 }
 
 .bio-container {
@@ -153,8 +149,15 @@ footer {
   grid-area: footer;
 }
 
+/* Modifications for screen widths <= 1056px */
 @media screen and (max-width: 1056px) {
   .bio-container {
-    flex-direction: column;
+    flex-direction: column; /* Change from row */
+  }
+}
+
+@keyframes social-link-icon-float {
+  100% {
+    transform: translateY(-5px);
   }
 }
