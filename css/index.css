@@ -68,7 +68,7 @@ main {
 }
 
 .social-link__icon {
-  transition: 0.2s ease-in-out;
+  transition: 0.2s linear;
 }
 
 .social-link__icon:hover {
@@ -112,7 +112,7 @@ main {
   color: var(--theme-color-light-1);
   border: none;
   box-shadow: 6px 6px var(--theme-color-accent-1);
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s linear;
   cursor: pointer;
 }
 
@@ -123,7 +123,10 @@ main {
 .contact-button__hand-wave {
   margin-left: 1rem;
   font-size: 20px;
-  animation: wave-hand 5s infinite forwards;
+  animation-name: wave-hand;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode:  forwards;
 }
 
 /* Main - Skills section */
