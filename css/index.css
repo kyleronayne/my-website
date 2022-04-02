@@ -67,8 +67,12 @@ main {
   padding-right: 1rem;
 }
 
+.social-link__icon {
+  transition: 0.2s ease-in-out;
+}
+
 .social-link__icon:hover {
-  animation: social-link-icon-float 0.2s ease-in forwards;
+  transform: translateY(-5px);
 }
 
 .bio-container {
@@ -107,13 +111,19 @@ main {
   background-color: var(--theme-color-dark);
   color: var(--theme-color-light-1);
   border: none;
-  box-shadow: 6px 6px 0 var(--theme-color-accent-1);
+  box-shadow: 6px 6px var(--theme-color-accent-1);
+  transition: box-shadow 0.2s;
   cursor: pointer;
+}
+
+.about-me-section__contact-button:hover {
+  box-shadow: 9px 9px var(--theme-color-accent-1);
 }
 
 .contact-button__hand-wave {
   margin-left: 1rem;
   font-size: 20px;
+  animation: wave-hand 5s infinite forwards;
 }
 
 /* Main - Skills section */
@@ -149,15 +159,29 @@ footer {
   grid-area: footer;
 }
 
-/* Modifications for screen widths <= 1056px */
+/* Screen size modifications */
 @media screen and (max-width: 1056px) {
   .bio-container {
     flex-direction: column; /* Change from row */
   }
 }
 
-@keyframes social-link-icon-float {
-  100% {
-    transform: translateY(-5px);
+/* Animations */
+@keyframes wave-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-25deg);
+  }
+
+  20% {
+    transform: rotate(60deg);
+  }
+
+  /* Delay period */
+  30%, 100% {
+    transform: rotate(0deg)
   }
 }
