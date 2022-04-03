@@ -150,7 +150,7 @@ main {
   margin-top: -6rem;
   background-color: var(--theme-color-light-1);
   border: solid black 10px;
-  border-radius: 25px;
+  border-radius: 24px;
   box-shadow: 0px -10px 25px 10px #00000033;
 }
 
@@ -171,7 +171,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
   padding: 2rem;
+  background-color: var(--theme-color-light-1);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 8px;
+}
+
+.skill-card__logo {
+  transition: transform 0.2s linear;
+}
+
+.skills-section__skill-card:hover .skill-card__logo {
+  transform: translateY(-10px);
 }
 
 .skill-card__label {
