@@ -91,7 +91,7 @@ main {
 .about-me-section__bio-card {
   width: 30rem;
   padding: 1rem;
-  border: solid black 3px;
+  border: solid var(--theme-color-dark) 3px;
   border-radius: 12px;
   box-shadow: 5px 5px var(--theme-color-accent-1);
 }
@@ -112,11 +112,12 @@ main {
   color: var(--theme-color-light-1);
   border: none;
   box-shadow: 6px 6px var(--theme-color-accent-1);
-  transition: box-shadow 0.2s linear;
+  transition: 0.2s linear;
   cursor: pointer;
 }
 
 .about-me-section__contact-button:hover {
+  color: var(--theme-color-accent-2);;
   box-shadow: 9px 9px var(--theme-color-accent-1);
 }
 
@@ -133,7 +134,7 @@ main {
 .skills-section {
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: var(--theme-color-dark);
 }
 
 .skills-section-underlay {
@@ -145,26 +146,26 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 35rem;
   width: 85%;
   margin-top: -6rem;
+  padding: 1rem;
   background-color: var(--theme-color-light-1);
-  border: solid black 10px;
+  border: solid var(--theme-color-dark) 10px;
   border-radius: 24px;
+  /* x, y, blur radius, blur spread, color */
   box-shadow: 0px -10px 25px 10px #00000033;
-}
-
-.skills-section__title {
-  margin-top: 1rem;
 }
 
 .skill-cards-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 .skill-cards-container__row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-section__skill-card {
@@ -176,14 +177,6 @@ main {
   background-color: var(--theme-color-light-1);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 8px;
-}
-
-.skill-card__logo {
-  transition: transform 0.2s linear;
-}
-
-.skills-section__skill-card:hover .skill-card__logo {
-  transform: translateY(-10px);
 }
 
 .skill-card__label {
