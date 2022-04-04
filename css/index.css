@@ -117,7 +117,7 @@ main {
 }
 
 .about-me-section__contact-button:hover {
-  color: var(--theme-color-accent-2);;
+  color: var(--theme-color-accent-2);
   box-shadow: 9px 9px var(--theme-color-accent-1);
 }
 
@@ -134,12 +134,8 @@ main {
 .skills-section {
   display: flex;
   justify-content: center;
+  padding-bottom: 6rem;
   background-color: var(--theme-color-dark);
-}
-
-.skills-section-underlay {
-  height: 6rem;
-  background-color: var(--theme-color-light-1);
 }
 
 .skills-section-overlay {
@@ -158,12 +154,7 @@ main {
 
 .skill-cards-container {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
-}
-
-.skill-cards-container__row {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
